@@ -1,0 +1,98 @@
+/* Dashboard container styling */
+.dashboard {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #f9fdf9; 
+  border-radius: 15px; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+}
+
+/* Dashboard buttons container */
+.dashboard-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; 
+  margin-top: 30px;
+}
+
+/* Button styling */
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #4caf50; 
+  color: white;
+  border: none;
+  border-radius: 50px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #45a049; 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+}
+
+/* Button Focus Effect for accessibility */
+button:focus {
+  outline: none;
+  border: 2px solid #388e3c; 
+}
+
+/* Responsive styling for tablets (width 768px and below) */
+@media (max-width: 768px) {
+  .dashboard-buttons {
+    gap: 15px; 
+    margin-top: 20px; 
+  }
+
+  button {
+    font-size: 16px; 
+    padding: 12px 20px; 
+  }
+
+  .dashboard {
+    margin: 30px auto;
+    padding: 15px; 
+  }
+}
+
+/* Responsive styling for mobile devices (width 480px and below) */
+@media (max-width: 480px) {
+  .dashboard {
+    max-width: 90%; 
+    padding: 10px; 
+  }
+
+  .dashboard-buttons {
+    flex-direction: column; 
+    gap: 10px; 
+  }
+
+  button {
+    font-size: 14px; 
+    padding: 10px 15px;
+    width: 100%; 
+    box-shadow: none; 
+  }
+}
+
+/* Add support for ultra-wide screens (width above 1200px) */
+@media (min-width: 1200px) {
+  .dashboard {
+    max-width: 1400px;
+  }
+
+  .dashboard-buttons {
+    gap: 40px; 
+  }
+
+  button {
+    padding: 18px 35px; 
+    font-size: 20px; 
+  }
+}
